@@ -1,4 +1,4 @@
-<h1>All Contacts</h1>
+<h1>Clients first and last names</h1>
 
 <ul>
   <% $rolodex.contacts.each do |contact| %>
@@ -6,4 +6,15 @@
   <% end %>
 </ul>
 
+<h1>Client email addresses and notes</h1>
+
+<ul>
+  <% $rolodex.contacts.each do |contact| %>
+    <li><%= contact.email %> <%= contact.note %></li>
+  <% end %>
+</ul>
+
 <a href="/contacts/new_contact"> add a new contect</a>
+<a href="/contacts/delete_contact"> delete a contect</a>
+<a href="/contacts/display_particular_contact">display single contact</a>
+
