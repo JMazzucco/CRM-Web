@@ -20,7 +20,6 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-
 get '/contacts/new_contact' do
 	erb :new_contact
 end
