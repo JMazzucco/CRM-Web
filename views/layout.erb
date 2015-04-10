@@ -2,23 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="main.css">
+	<link type="text/css" rel="stylesheet" href="stylesheet.css">
 	<title>Customer Relationship Application</title>
 </head>
 <body>
 	<header>
 	<h1>Customer Relationship Management</h1>
-	<h2>Store and access your client contacts online</h2>
+	<h2>Probably the Best CRM in the World</h2>
 	</header>
 	<nav>
 		<ul>
-			<li>Contacts</li>
-			<li>About</li>
-			<li>Resources</li>
-			<li>News</li>
+			<li><a href="/contacts">Contacts</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/resources">Resources</a></li>
+			<li><a href="/news">News</a></li>
 		</ul>
 	</nav>
+	<div id="main">
 		<%= yield %>
-	<footer>copywrite ... 2015</footer>
+		</div>
+	<footer>
+		<p>&copy; 2015 JM Designs</p>
+	</footer>
 </body>
 </html>
 

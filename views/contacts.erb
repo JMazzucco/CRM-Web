@@ -3,6 +3,8 @@
 <ul>
   <% $rolodex.contacts.each do |contact| %>
     <li><%= contact.first_name %> <%= contact.last_name %></li>
+    <li><%= contact.email %> <%= contact.notes %></li>
+    <a href="/contacts/<%= contact.id %>">Details</a>
   <% end %>
 </ul>
 
@@ -10,11 +12,10 @@
 
 <ul>
   <% $rolodex.contacts.each do |contact| %>
-    <li><%= contact.email %> <%= contact.note %></li>
+    <li><%= contact.email %> <%= contact.notes %></li>
   <% end %>
 </ul>
 
-<a href="/contacts/new_contact"> add a new contect</a>
-<a href="/contacts/delete_contact"> delete a contect</a>
+<a href="/contacts/new_contact">add a new contact</a>
+<a href="/contacts/delete_contact">delete a contect</a>
 <a href="/contacts/display_particular_contact">display single contact</a>
-
