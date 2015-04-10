@@ -36,12 +36,12 @@ get '/news' do
 	erb :news
 end
 
-get '/contacts/:id' do
-	@contact = $rolodex.find(params[:id].to_i)
-	if @contact
-  	erb :show
+get "/contacts/:id" do
+  @contact = $rolodex.find(params[:id].to_i)
+  if @contact
+    erb :show
   else
-  	Sinatra::NotFound
+    raise Sinatra::NotFound
   end
 end
 
