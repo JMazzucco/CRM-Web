@@ -38,7 +38,11 @@ end
 
 get '/contacts/:id' do
 	@contact = $rolodex.find(params[:id].to_i)
-  erb :show
+	if @contact
+  	erb :show
+  else
+  	Sinatra::NotFound
+  end
 end
 
 # get '/:menu_page' do
