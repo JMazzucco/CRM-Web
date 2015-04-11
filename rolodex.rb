@@ -36,9 +36,9 @@ attr_accessor :contacts
 		(@contacts.each {|contact| puts contact.notes}) if attribute_selection == 4
 	end
 
-	def delete_contact(id_selection)
-		@contacts.delete_if {|inst| inst.id == id_selection}
-	end
+  def remove_contact(contact)
+    @contacts.delete(contact)
+  end
 
 	def find(contact_id)
 		@contacts.find do |contact|
