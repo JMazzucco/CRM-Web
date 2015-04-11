@@ -1,17 +1,18 @@
 <h1>Clients first and last names</h1>
 
 <ul>
-  <% $rolodex.contacts.each do |contact| %>
+  <% @@rolodex.contacts.each do |contact| %>
     <li><%= contact.first_name %> <%= contact.last_name %></li>
     <li><%= contact.email %> <%= contact.notes %></li>
     <a href="/contacts/<%= contact.id %>">Details</a>
+    <a href="/contacts/<%= contact.id %>/edit">Edit</a>
   <% end %>
 </ul>
 
 <h1>Client email addresses and notes</h1>
 
 <ul>
-  <% $rolodex.contacts.each do |contact| %>
+  <% @@rolodex.contacts.each do |contact| %>
     <li><%= contact.email %> <%= contact.notes %></li>
   <% end %>
 </ul>
@@ -19,3 +20,5 @@
 <a href="/contacts/new_contact">add a new contact</a>
 <a href="/contacts/delete_contact">delete a contect</a>
 <a href="/contacts/display_particular_contact">display single contact</a>
+
+<!-- show and individuals contact info. On the same page, create edit and delete buttons -->
