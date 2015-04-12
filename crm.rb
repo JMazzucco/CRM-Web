@@ -4,7 +4,7 @@ require_relative 'rolodex'
 
 @@rolodex = Rolodex.new
 # $rolodex= Rolodex.new
-@@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+# @@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
 
 
 get '/' do
