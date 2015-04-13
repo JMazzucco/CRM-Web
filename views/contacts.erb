@@ -3,11 +3,15 @@
 		<h1>My Contacts</h1>
 		<hr>
 		<div class="all-contacts">
-		  <% @@rolodex.contacts.each do |contact| %>
+		  <% @contacts.each do |contact| %>
 		    <a href="/contacts/<%= contact.id %>">
-		    	<li><%= contact.first_name %> <%= contact.last_name %></li>
+		    	<li>
+					<!-- add styling to contact id in css-->
+		    	<%= contact.id %>
+
+		    	<%= contact.first_name %> <%= contact.last_name %>
+  <% end %></li>
 		    </a>
-		  <% end %>
 		</div>
 		<a href="/contacts/new_contact">
 			<div id="add-contact">
