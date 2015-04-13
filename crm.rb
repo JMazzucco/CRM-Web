@@ -13,17 +13,6 @@ class Contact
   property :note, String
 end
 
-# @@rolodex = Rolodex.new
-# @@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
-
-#   def initialize(first_name, last_name, email, notes)
-#     @id = id
-#     @first_name = first_name
-#     @last_name = last_name
-#     @email = email
-#     @notes = notes
-#   end
-# end
 
 DataMapper.finalize
 DataMapper.auto_upgrade!
