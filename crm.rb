@@ -3,8 +3,7 @@ require_relative 'contact'
 require_relative 'rolodex'
 
 @@rolodex = Rolodex.new
-# $rolodex= Rolodex.new
-# @@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+@@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
 
 
 get '/' do
@@ -27,7 +26,7 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
- get "/contacts/:id" do
+get "/contacts/:id" do
   @contact = @@rolodex.find(params[:id].to_i)
   if @contact
     erb :show_contact
@@ -69,28 +68,20 @@ delete "/contacts/:id" do
   end
 end
 
+get '/temp' do
+  erb :temp
+end
+
+
 # get '/:menu_page' do
-# 	menu = params[:menu_page]
-# 	erb menu
+#   menu = params[:menu_page]
+#   erb menu
 # end
 
 # get '/articles/:article_name'
-# 	if File.exist?("views/#{params[:article_name]}.erb")
-# 		erb params[:article_name]
-# 	else
-# 		erb :error_page
-# 	end
-# end
-
-
-# get '/about' do
-#   erb :about
-# end
-
-# get '/resources' do
-#   erb :resources
-# end
-
-# get '/news' do
-#   erb :news
+#   if File.exist?("views/#{params[:article_name]}.erb")
+#     erb params[:article_name]
+#   else
+#     erb :error_page
+#   end
 # end

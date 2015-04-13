@@ -1,25 +1,18 @@
-<h1>Clients first and last names</h1>
-
-<ul>
-  <% @@rolodex.contacts.each do |contact| %>
-    <a href="/contacts/<%= contact.id %>">
-    	<li><%= contact.first_name %> <%= contact.last_name %></li>
-    	<li><%= contact.email %> <%= contact.notes %></li>
-    </a>
-    <!-- <a href="/contacts/<%= contact.id %>/edit">Edit</a> -->
-  <% end %>
-</ul>
-
-<h1>Client email addresses and notes</h1>
-
-<ul>
-  <% @@rolodex.contacts.each do |contact| %>
-    <li><%= contact.email %> <%= contact.notes %></li>
-  <% end %>
-</ul>
-
-<a href="/contacts/new_contact">add a new contact</a>
-<a href="/contacts/delete_contact">delete a contect</a>
-<a href="/contacts/display_particular_contact">display single contact</a>
-
-<!-- show and individuals contact info. On the same page, create edit and delete buttons -->
+<div class="content">
+	<div class="contact-container">
+		<h1>My Contacts</h1>
+		<hr>
+		<div class="all-contacts">
+		  <% @@rolodex.contacts.each do |contact| %>
+		    <a href="/contacts/<%= contact.id %>">
+		    	<li><%= contact.first_name %> <%= contact.last_name %></li>
+		    </a>
+		  <% end %>
+		</div>
+		<a href="/contacts/new_contact">
+			<div id="add-contact">
+				<p>Add Contact</p>
+			</div>
+		</a>
+	</div>
+</div>

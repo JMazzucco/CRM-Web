@@ -1,10 +1,35 @@
-<h1>Edit a Contact</h1>
 
-<form action="/contacts/<%= @contact.id %>" method="post">
-  <input type="hidden" name="_method" value="put">
-  <input type="text" name="first_name" value="<%= @contact.first_name %>">
-  <input type="text" name="last_name" value="<%= @contact.last_name %>">
-  <input type="text" name="email" value="<%= @contact.email %>">
-  <input type="text" name="notes" value="<%= @contact.notes %>">
+<div class="content">
+	<div class="contact-container">
+
+	<form action="/contacts/<%= @contact.id %>" method="post">
+
+	<fieldset>
+	<legend>Edit Contact</legend>
+	 <input type="hidden" name="_method" value="put">
+	<div class="feild">
+		<label for="new-first">First Name</label>
+  	<input id="new-first" type="text" name="first_name" value="<%= @contact.first_name %>">
+  </div>
+
+ 	<div class="feild">
+		<label for="new-last">Last Name</label>
+  	<input id="new-last" type="text" name="last_name" value="<%= @contact.last_name %>">
+  </div>
+
+	<div class="feild">
+		<label for="new-email">Email</label>
+  	<input id="new-email" type="email" name="email" value="<%= @contact.email %>">
+  </div>
+
+	<div class="feild" id="note">
+		<label for="new-notes">Note</label>
+  	<textarea id="new-notes" rows="5" cols="50" name="notes"><%= @contact.notes %></textarea>
+  </div>
+
   <input type="submit" name="Submit">
-</form>
+  </fieldset>
+	</form>
+
+	</div>
+</div>

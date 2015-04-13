@@ -1,0 +1,274 @@
+html, body {
+  height: 100%;
+}
+
+.top-wrapper {
+	display: block;
+	height: 8%;
+	position: fixed;
+	font-family: Tahoma;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid black;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  font-family: Muli, Serif;
+}
+
+#main {
+	background: linear-gradient(to right, rgba(253, 184, 19, .2), rgba(0, 0, 255, 0.2)), url(/handmadepaper.png);
+	min-height: 100%;
+	margin-bottom: -2%;
+}
+
+.site-footer {
+	clear:both;
+	height: 2%;
+	display: block;
+	text-align: center;
+	font-family: Tahoma;
+}
+
+header {
+	letter-spacing: 5px;
+	display: inline-block;
+	width: 30%;
+	text-align: left;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 1%;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	text-align: right;
+	word-spacing: 2em;
+  text-decoration: none;
+  padding: 2%;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav a:hover {
+	text-shadow: 2px 2px 4px rgba(253, 184, 19, .5);
+}
+
+a:link, a:visited {
+	color: black;
+}
+
+#silhouette {
+	height: 400px;
+	margin: 30px;
+
+}
+
+.left_column {
+	clear: both;
+	float: left;
+	display: inline-block;
+	width: 50%;
+	margin-top: 200px;
+
+}
+
+.right_column {
+	font-family: Tahoma;
+	float: left;
+	display: inline-block;
+	width: 35%;
+	margin-top: 200px;
+	padding-right: 10px;
+}
+
+.right_column h1 {
+	font-size: 5em;
+		line-height: 1em;
+}
+
+h2 {
+	font-size: 2.5em;
+		line-height:2em;
+}
+
+.right_column h4 {
+	font-size: 1.5em;
+		line-height: 1.5em;
+}
+
+.company_name {
+	white-space: nowrap;
+}
+
+.red {
+	color: red;
+}
+
+.content {
+	padding: 10% 10%;
+	height: 500px;
+}
+
+.content_left {
+	float: left;
+	display: inline-block;
+	width: 45%;
+	padding:2%;
+	border: 1px dotted black;
+}
+
+.content_right {
+	float: right;
+	display: inline-block;
+	width: 45%;
+	padding:2%;
+	border: 1px dotted black;
+}
+
+.contact-container {
+	height: 100%;
+	width: 50%;
+	border:2px black solid;
+	margin: auto;
+	border-radius: 5%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 2em;
+	margin-top: 5%;
+
+}
+
+.all-contacts {
+	margin: 5% auto;
+	width: 75%;
+	height: 60%;
+	border: 1px dotted black;
+	vertical-align: middle;
+	overflow: auto;
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.all-contacts li {
+	list-style-type: none;
+	font-size: 1.5em;
+	font-family: Tahoma;
+}
+
+#add-contact {
+	margin: 5% auto;
+	width: 125px;
+	height: 30px;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding-top: 2%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+#add-contact > p {
+	text-align: center;
+	font-family: Tahoma;
+}
+
+form {
+	width: 70%;
+	height: 75%;
+	margin: 20px auto;
+}
+
+.feild {
+	margin-right: 10%;
+	font-family: Tahoma;
+	text-align: right;
+}
+
+textarea, input {
+	width: 70%;
+	height: 25px;
+	margin: 10px auto;
+	font-size: 1.2em;
+	font-family: Tahoma;
+}
+
+textarea {
+	height: 75px;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1.5em;
+
+}
+
+input[type="submit"] {
+	float: right;
+	width: 75px;
+	height: 30px;
+	margin: 10px auto;
+	margin-right: 45px;
+}
+
+fieldset  {
+	border: 1px dotted;
+	height: 400px;
+}
+
+
+legend {
+	font-size: 1.5em;
+	font-family: Tahoma;
+}
+
+.single-contact {
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	border: 2px solid black;
+	text-align: center;
+	line-height: 4em;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	margin-top: 5%;
+}
+
+#note {
+	line-height: 0;
+}
+
+.div-test {
+	height: 40px;
+	margin: auto;
+	padding: 0 0;
+	text-align: right;
+}
+
+.edit-button {
+	clear: both;
+	width: 100px;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+
+}
+
+.delete-button {
+	width: 100px;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	position: relative;
+}

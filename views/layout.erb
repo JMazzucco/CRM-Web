@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link type="text/css" rel="stylesheet" href="main.css">
-	<link type="text/css" rel="stylesheet" href="stylesheet.css">
-	<title>Customer Relationship Application</title>
+	<link type="text/css" rel="stylesheet" href="/css/main.css">
+	<link type="text/css" rel="stylesheet" href="/css/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+	<title>Fresh Contacts</title>
 </head>
+
 <body>
-	<header>
-	<h1>Customer Relationship Management</h1>
-	<h2>Probably the Best CRM in the World</h2>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="/contacts">Contacts</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/resources">Resources</a></li>
-			<li><a href="/news">News</a></li>
-		</ul>
-	</nav>
+	<div class="top-wrapper">
+		<header>
+			<h1 id="name">
+				<a href="/">Fresh Contacts</a>
+			</h1>
+		</header>
+		<nav>
+			<a href="/contacts">MyContacts</a>
+			<a href="/temp">About</a>
+			<a href="/temp">Resources</a>
+			<a href="/temp">News</a>
+		</nav>
+	</div>
 	<div id="main">
 		<%= yield %>
-		</div>
-	<footer>
-		<p>&copy; 2015 JM Designs</p>
+	</div>
+	<footer class="site-footer">
+		<h5>&copy; 2015 JM Designs</h5>
 	</footer>
 </body>
 </html>

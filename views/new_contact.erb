@@ -1,9 +1,31 @@
-<h1>Create new Contact</h1>
+<div class="content">
+	<div class="contact-container">
+		<form action="/contacts" method="post">
+		<fieldset>
+		<legend>Add Contact</legend>
 
-<form action="/contacts" method="post">
-  <input type="text" name="first_name">
-  <input type="text" name="last_name">
-  <input type="text" name="email">
-  <input type="text" name="note">
-  <input type="submit" name="Submit">
-</form>
+		<div class="feild">
+			<label for="new-first">First Name</label>
+	  	<input id="new-first" type="text" name="first_name">
+	  </div>
+
+	 	<div class="feild">
+			<label for="new-last">Last Name</label>
+	  	<input id="new-last" type="text" name="last_name">
+	  </div>
+
+		<div class="feild">
+			<label for="new-email">Email</label>
+	  	<input id="new-email" type="email" name="email">
+	  </div>
+
+		<div class="feild">
+			<label for="new-notes">Note</label>
+	  	<textarea id="new-notes" rows="5" cols="50" name="notes"></textarea>
+	  </div>
+
+	  <input type="submit" name="Submit">
+	  </fieldset>
+		</form>
+	</div>
+</div>
